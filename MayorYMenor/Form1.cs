@@ -13,6 +13,7 @@ namespace MayorYMenor
             int numero2 = Int32.Parse(txtNumero2.Text);
             int numero3 = Int32.Parse(txtNumero3.Text);
 
+
             int mayor = numero1;
 
             if(numero2>mayor)
