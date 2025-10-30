@@ -10,8 +10,8 @@ namespace MayorYMenor
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             int numero1 = Int32.Parse(txtNumero1.Text);
-            int numero2 = Int32.Parse(txtNumero2.Text);
-            int numero3 = Int32.Parse(txtNumero3.Text);
+            //int numero2 = Int32.Parse(txtNumero2.Text);
+            //int numero3 = Int32.Parse(txtNumero3.Text);
 
             /*int mayor = numero1;
 
@@ -34,9 +34,16 @@ namespace MayorYMenor
                 menor = numero3;
             }
             MessageBox.Show("El numero mas pequeño es: " + menor);*/
-            double promedio = (numero1 + numero2 + numero3);
-            promedio = promedio / 3;
-            MessageBox.Show("El promedio es: " + promedio);
+            //double promedio = (numero1 + numero2 + numero3);
+            //promedio = promedio / 3;
+            if (numero1 % 2 == 0)
+            {
+                MessageBox.Show("El numero es par: " + numero1 );
+            }
+            else
+            {
+                MessageBox.Show("El numero es impar: " + numero1);
+            }
         }
     }
 }
