@@ -13,8 +13,7 @@ namespace MayorYMenor
             int numero2 = Int32.Parse(txtNumero2.Text);
             int numero3 = Int32.Parse(txtNumero3.Text);
 
-
-            int mayor = numero1;
+            /*int mayor = numero1;
 
             if(numero2>mayor)
             {
@@ -34,7 +33,10 @@ namespace MayorYMenor
             {
                 menor = numero3;
             }
-            MessageBox.Show("El numero mas pequeño es: " + menor);
+            MessageBox.Show("El numero mas pequeño es: " + menor);*/
+            double promedio = (numero1 + numero2 + numero3);
+            promedio = promedio / 3;
+            MessageBox.Show("El promedio es: " + promedio);
         }
     }
 }
